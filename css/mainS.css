@@ -86,3 +86,8 @@ p{
     cursor: pointer;
     color: black;
 }
+
+td {
+  vertical-align: top;
+  text-align: left;
+}
