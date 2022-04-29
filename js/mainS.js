@@ -33,12 +33,17 @@ function getBrowserSize(){
             return {'width':w, 'height': h};
      }
      
-if(parseInt(getBrowserSize().width) < 800){ //small display
+if(parseInt(getBrowserSize().width) < 800){ // if small media screen
 
       var tempS = document.getElementById("profileDiv").innerHTML;
       document.getElementById("profileDivHome").innerHTML = tempS;
       document.getElementById("profileDiv").innerHTML = "";
-      //document.getElementById("separateMenu").innerHTML = "<br/>";
-      
-      
+      document.getElementById("tabgroup1").style.display = "none";
+      document.getElementById("tabgroup2").style.display     = "";
+      //document.getElementById("separateMenu").innerHTML = "<br/>";      
+/*}else{
+    var tempS = document.getElementById("tabgroup2").innerHTML;
+    document.getElementById("tabgroup1").innerHTML =  document.getElementById("tabgroup1").innerHTML + tempS;
+    document.getElementById("tabgroup2").innerHTML = "";
+    */
 }
